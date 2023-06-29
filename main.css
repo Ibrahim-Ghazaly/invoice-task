@@ -12,18 +12,9 @@ body{
 
 }
 
-.invoice{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    width: 90%;
-}
 
-
-
-.invoice .invoice-content{
-    width: 100%;
+ .invoice-content{
+    width: 80%;
     background-color:#fff;
 
 }
@@ -127,9 +118,8 @@ body{
 }
 
 .invoice-content-body{
-    margin: 20px auto;
-    width: 80%;
     text-align: center;
+  
   
 }
 
@@ -137,9 +127,10 @@ body{
 
 
 table { 
-	width:100%; 
+	width:80%; 
 	border-collapse: collapse; 
 	margin:50px auto 0 auto;
+
 	}
 
 /* Zebra striping */
@@ -232,3 +223,88 @@ table tfoot tr .total,table tfoot tr .total ~ td{
 }
 
 
+
+
+
+
+@media(max-width:768px){
+
+
+.invoice-content-head-info{
+    
+    grid-template-columns: 1fr;
+}
+
+
+
+table { 
+    width:100%; 
+    border-collapse: collapse; 
+    margin:50px auto 0 auto;
+    }
+
+.invoice-content-head-info{
+    grid-template-columns: 1fr ;
+}
+
+
+    table { 
+    width:50%; 
+    
+    }
+
+table td, th { 
+    padding: 8px; 
+    font-size: 15px;
+    }
+
+    table tfoot tr .total,table tfoot tr .total ~ td{
+        padding:10px ;
+        
+    }
+
+    .greatful .greatful-heading{
+    position: static;
+    font-size: 1.5rem;
+    
+}
+
+    
+  .greatful{
+    flex-direction: column;
+  }
+
+  .greatful div:first-child{
+    width: 80%;
+}
+    .greatful .terms-conditions{
+      
+        margin-top: 50px;
+       
+    }
+
+    .greatful .signature{
+        margin-top: 70px;
+     
+        
+     }  
+}
+
+
+
+@media(max-width:465px){
+    table { 
+        width:10%; 
+        
+        }
+
+    table td, th { 
+        padding: 5px; 
+        font-size: 10px;
+        }
+
+    table tfoot tr .total,table tfoot tr .total ~ td{
+        padding:8px ;
+        
+    }
+}
