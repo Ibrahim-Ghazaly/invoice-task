@@ -263,8 +263,9 @@ table td, th {
         
     }
 
-.greatful .greatful-heading{
+    .greatful .greatful-heading{
     position: static;
+    font-size: 1.5rem;
     
 }
 
